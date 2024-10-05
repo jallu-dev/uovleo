@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dancing-script {
+  font-family: "Dancing Script";
+}
+
+.lato-light {
+  font-family: "Lato";
+  font-weight: 200;
+}
+
+.lato-regular {
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.lato-bold {
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+body {
+  font-family: "Lato";
+  font-weight: 300;
+  /* background-color: rgb(248, 242, 234); */
+}
