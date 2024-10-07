@@ -28,3 +28,38 @@ body {
   font-weight: 300;
   /* background-color: rgb(248, 242, 234); */
 }
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.front-title {
+  backface-visibility: hidden;
+}

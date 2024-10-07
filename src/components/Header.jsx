@@ -28,12 +28,12 @@ const Header = ({ activeTab, setActiveTab }) => {
     <div>
       <div className="sm:h-40 px-10 flex flex-col sm:flex-row justify-between items-center bg-gradient-to-b sm:bg-gradient-to-r from-amber-50 to-yellow-600">
         <img src={leoLogo} alt="leo-ouv" className="h-24 sm:h-full" />
-        <h1 className="uppercase text-xl sm:text-4xl text-center font-semibold text-black lato-bold">
+        <h1 className="uppercase text-xl sm:text-4xl text-center font-semibold text-zinc-900 lato-bold">
           leo club of university of vavuniya
         </h1>
       </div>
 
-      <div className="bg-black text-amber-100 font-semibold tracking-wide flex">
+      <div className="bg-zinc-900 text-amber-100 font-semibold tracking-wide flex">
         <div
           className={`${
             activeTab == "home" ? "bg-amber-300 text-black " : ""

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Activities from "./pages/Activities";
 import Contact from "./pages/Contact";
 import Members from "./pages/Members";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
@@ -17,6 +18,7 @@ const App = () => {
         <Route element={<Contact />} path="/contact"></Route>
         <Route element={<Members />} path="/members"></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

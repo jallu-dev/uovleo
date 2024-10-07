@@ -9,14 +9,7 @@ import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
 
 const Home = () => {
-  const [images, setImages] = useState([
-    heroImage,
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-  ]);
+  const [images, setImages] = useState([img1, img2, img3, img4, img5]);
 
   const onLeftClick = () => {
     let newArr = [...images];
@@ -84,12 +77,11 @@ const Home = () => {
         </div>
       </div>
       <div className="w-1/2 mx-auto p-3 flex justify-between">
-        {" "}
-        <CiCircleChevLeft
-          className="text-xl md:text-2xl text-black hover:text-amber-600 cursor-pointer"
+        <FaChevronCircleLeft
+          className="text-xl md:text-2xl  text-black hover:text-amber-600 cursor-pointer"
           onClick={onLeftClick}
         />
-        <CiCircleChevRight
+        <FaChevronCircleRight
           className="text-xl md:text-2xl  text-black hover:text-amber-600 cursor-pointer"
           onClick={onRightClick}
         />
