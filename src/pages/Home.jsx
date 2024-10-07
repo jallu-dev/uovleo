@@ -58,17 +58,17 @@ const Home = () => {
         </div>
       </div>
       <div className="mt-16 px-3 flex justify-center items-center">
-        <div className="w-1/4 aspect-video rounded-lg overflow-hidden ">
+        <div className="w-1/4 aspect-video rounded-lg overflow-hidden hidden md:inline-block">
           <img
             src={images[0]}
             alt=""
             className="w-full  blur-[1px] aspect-video"
           />
         </div>
-        <div className="w-1/2 aspect-video rounded-lg overflow-hidden relative ">
+        <div className="w-[90%] md:w-1/2 aspect-video rounded-lg overflow-hidden relative ">
           <img src={images[1]} alt="" className="w-full aspect-video" />
         </div>
-        <div className="w-1/4 aspect-video rounded-lg overflow-hidden ">
+        <div className="w-1/4 aspect-video rounded-lg overflow-hidden hidden md:inline-block">
           <img
             src={images[2]}
             alt=""
@@ -76,7 +76,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="w-1/2 mx-auto p-3 flex justify-between">
+      <div className="w-1/4 mx-auto p-3 flex justify-between">
         <FaChevronCircleLeft
           className="text-xl md:text-2xl  text-black hover:text-amber-600 cursor-pointer"
           onClick={onLeftClick}

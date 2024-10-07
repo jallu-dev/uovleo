@@ -38,7 +38,7 @@ const Members = () => {
             name="Proctor Edwin Linosh"
             email="linosh85@vau.ac.lk"
             tel="0773248283"
-            // style="absolute left-16"
+            style="order-2 md:order-none"
             // small={true}
           />
           <MemberCard
@@ -48,6 +48,7 @@ const Members = () => {
             email="anudew16@gmail.com"
             tel="0702065081"
             large={true}
+            style="order-1 md:order-none"
           />
           <MemberCard
             img={pastPresident}
@@ -55,6 +56,8 @@ const Members = () => {
             name="Leo Malshi Imasha"
             email="imashamalshi7@gmail.com"
             tel="0774656016"
+            style="order-3 md:order-none"
+
             // style="absolute right-16"
             // small={true}
           />

@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="m-3">
+    <div className="m-3 min-h-full">
       <div className="mb-5">
         <h1 className="text-lg font-semibold">Official Mail</h1>
         <p>leoclubuov@vau.ac.lk</p>

@@ -10,11 +10,11 @@ const MemberCard = ({ img, position, name, email, tel, style, large }) => {
           : "md:w-40 md:h-40 lg:w-48 lg:h-48"
       } h-64 rounded-2xl w-[90%] ${style}`}
     >
-      <div className="flip-card-inner h-full w-full flex flex-col md:flex-row justify-center relative shadow-md md:shadow-2xl rounded-2xl border-2 border-amber-600 md:rounded-none md:border-0 py-2 md:py-0 bg-amber-100 bg-none">
+      <div className="flip-card-inner h-full w-full flex flex-col md:flex-row justify-center relative shadow-md md:shadow-2xl rounded-2xl  md:rounded-none md:border-0 py-2 md:py-0 bg-gradient-to-b from-amber-50 to-amber-100 md:bg-none">
         <div className="flip-card-front h-32 md:h-full w-full md:bg-black flex rounded-3xl md:border-2 md:border-amber-600">
           <img
             src={img}
-            className="h-full aspect-square mx-auto bg-black overflow-hidden rounded-2xl md:border-2 md:border-amber-600"
+            className="h-full aspect-square mx-auto bg-black overflow-hidden rounded-full md:rounded-2xl md:border-2 md:border-amber-600"
           />
         </div>
         <div className="hidden md:inline-block uppercase md:absolute md:bottom-0 bg-black bg-opacity-60 text-white front-title w-full p-1 text-center rounded-b-3xl text-sm">

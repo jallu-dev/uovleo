@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import little1 from "./../assets/activities/little1.jpg";
 import little3 from "./../assets/activities/little3.jpg";
 import little2 from "./../assets/activities/little2.jpg";
@@ -74,7 +74,7 @@ const Activities = () => {
   ];
 
   return (
-    <div className="m-3">
+    <div className={`m-3`}>
       {data.map((item, ind) => (
         <Activity
           date={item.date}
