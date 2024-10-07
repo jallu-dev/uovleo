@@ -31,15 +31,15 @@ const Members = () => {
         <h1 className="uppercase text-center text-2xl mb-4">
           executive committee
         </h1>
-        <div className="flex flex-col md:flex-row justify-center relative mb-6 ">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-around items-center relative mb-6 ">
           <MemberCard
             img={advisor}
             position="Club Advisor"
             name="Proctor Edwin Linosh"
             email="linosh85@vau.ac.lk"
             tel="0773248283"
-            style="absolute left-16"
-            small={true}
+            // style="absolute left-16"
+            // small={true}
           />
           <MemberCard
             img={president}
@@ -47,6 +47,7 @@ const Members = () => {
             name="Leo Anuradhya Liyanaarachchi"
             email="anudew16@gmail.com"
             tel="0702065081"
+            large={true}
           />
           <MemberCard
             img={pastPresident}
@@ -54,66 +55,63 @@ const Members = () => {
             name="Leo Malshi Imasha"
             email="imashamalshi7@gmail.com"
             tel="0774656016"
-            style="absolute right-16"
-            small={true}
+            // style="absolute right-16"
+            // small={true}
           />
         </div>
-        <div className="flex flex-col md:flex-row justify-around relative mb-6 ">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-around items-center relative mb-6 ">
           <MemberCard
             img={vicePresident}
             position="vice President"
             name="Leo Moganraj Krishnakumaran"
             email="mohanrajkrishnakumaran@gmail.com"
             tel="0772139159"
+          />{" "}
+          <MemberCard
+            img={secretary}
+            position="secretary"
+            name="Leo Shashini Anuththara"
+            email="mirinchigeshashini@gmail.com"
+            tel="0716302585"
           />
-          <div className="flex flex-col items-center">
-            <MemberCard
-              img={secretary}
-              position="secretary"
-              name="Leo Shashini Anuththara"
-              email="mirinchigeshashini@gmail.com"
-              tel="0716302585"
-            />
-            <div className="flex  flex-col md:flex-row justify-between mt-6 gap-12">
-              <MemberCard
-                img={assSecretary}
-                position="Assistant Secretary"
-                name="Leo Tharushi Munasinghe"
-                email="tharushimunasinghe516@gmail.com"
-                tel="0760858218"
-              />
-              <MemberCard
-                img={assSecretary2}
-                position="Assistant Secretary"
-                name="Leo Hirusha Ruchini"
-                email="hirushajayasundara03@gmail.com"
-                tel="0760675755"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col items-center gap-6">
-            <MemberCard
-              img={treasurer}
-              position="treasurer"
-              name="Leo Nedula Dahanayake"
-              email="nedula2001@gmail.com"
-              tel="0716646647"
-            />
-            <MemberCard
-              img={assTreasurer}
-              position="Assistant Treasurer"
-              name="Leo Naduni Kaveesha"
-              email="nadunikaveesharathnapala@gmail.com"
-              tel="0760065108"
-            />
-          </div>
+          <MemberCard
+            img={treasurer}
+            position="treasurer"
+            name="Leo Nedula Dahanayake"
+            email="nedula2001@gmail.com"
+            tel="0716646647"
+          />
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-around items-center relative mb-6 ">
+          <MemberCard
+            img={assSecretary}
+            position="Assistant Secretary"
+            name="Leo Tharushi Munasinghe"
+            email="tharushimunasinghe516@gmail.com"
+            tel="0760858218"
+          />
+          <MemberCard
+            img={assSecretary2}
+            position="Assistant Secretary"
+            name="Leo Hirusha Ruchini"
+            email="hirushajayasundara03@gmail.com"
+            tel="0760675755"
+          />
+          <MemberCard
+            img={assTreasurer}
+            position="Assistant Treasurer"
+            name="Leo Naduni Kaveesha"
+            email="nadunikaveesharathnapala@gmail.com"
+            tel="0760065108"
+          />
         </div>
       </div>
       <div className="p-2 border-4 border-amber-600 mt-6">
         <h1 className="uppercase text-center text-2xl mt-4 mb-4">
           Board of Directors
         </h1>
-        <div className="flex flex-col md:flex-row justify-around relative mb-6 ">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-around items-center relative mb-6 ">
           <MemberCard
             img={it}
             position="Director of IT"
@@ -122,7 +120,7 @@ const Members = () => {
           />
           <MemberCard
             img={design}
-            position="Director of design"
+            position="Director of designing"
             name="Leo Chrishen Silva"
             email="chrishensilva@gmail.com"
           />
@@ -139,10 +137,10 @@ const Members = () => {
             email="indusararusith@gmail.com"
           />
         </div>
-        <div className="flex flex-col md:flex-row justify-around relative mb-6 ">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-around items-center relative mb-6 ">
           <MemberCard
             img={chiefEditor}
-            position="Director of Chief Editor"
+            position="Chief Editor"
             name="Leo Disitha Ranasinghe"
             email="disithar@gmail.com"
           />
@@ -165,7 +163,7 @@ const Members = () => {
             email="farhafareed2001@gmail.com"
           />
         </div>
-        <div className="flex flex-col md:flex-row justify-around relative mb-6 ">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-around items-center relative mb-6 ">
           <MemberCard
             img={coordFas}
             position="Director of Membership & Coordinating (FAS)"

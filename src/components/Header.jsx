@@ -60,7 +60,7 @@ const Header = ({ activeTab, setActiveTab }) => {
           onClick={(e) => onLinkClick(e)}
         >
           Activities
-        </div>{" "}
+        </div>
         <div
           className={`${
             activeTab == "contact" ? "bg-amber-300 text-black " : ""
@@ -70,11 +70,16 @@ const Header = ({ activeTab, setActiveTab }) => {
         >
           Contact
         </div>
+        <a
+          className={`hover:bg-amber-300 cursor-pointer py-2 transition-colors hover:text-black lato-regular w-28 text-center text-sm md:text-lg whitespace-nowrap`}
+          id="contact"
+          href="https://drive.google.com/file/d/1BwaBWIREsqru-6LjA_x0aOq2VKpPZDah/view?usp=sharing"
+          target="_blank"
+        >
+          E-Directory
+        </a>
       </div>
-      <div
-        // style={{ height: "3px" }}
-        className="border-y-4 border-b-yellow-600 border-t-amber-300"
-      ></div>
+      <div className="border-y-4 border-b-yellow-600 border-t-amber-300"></div>
     </div>
   );
 };

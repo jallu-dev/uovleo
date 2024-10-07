@@ -21,7 +21,7 @@ const Footer = () => {
           <FaLinkedin className="text-2xl text-sky-600" />
         </a>
       </div>
-      <h1 className="text-amber-200">
+      <h1 className="text-amber-200 text-center">
         Copyright &copy; 2024 Leo Club of University of Vavuniya.
       </h1>
     </div>
